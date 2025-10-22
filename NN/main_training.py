@@ -19,7 +19,9 @@ from sklearn.decomposition import PCA
 - For a feature to be excluded in the bag-of-frames feature tensor change the corresponding boolean to False
  (and vice versa)
 """
-# NOTE this code is stolen from Kivanc Tatar
+# NOTE: lines 22-110 are heavily inspired by or lifted from the code of Kivanc Tatar. Used with permission.
+# https://github.com/ktatar/latent-timbre-synthesis/blob/stable/functional/timbre-vae/train.py
+
 #Parse arguments
 parser = argparse.ArgumentParser()
 parser.add_argument('--config', type=str, default ='/cephyr/users/lundle/Alvis/benjo/Benjolin_MA/default.ini' , help='path to the config file')
